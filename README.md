@@ -13,7 +13,7 @@ $ git clone https://github.com/Bloc/bloc-frontend-project-starter.git <your-fron
 The project uses Grunt to run tasks in development. Thoroughly review our [resource on using Grunt](https://www.bloc.io/resources/using-grunt) before using this application. It may also help to review [our resource on NPM and `package.json` files](https://www.bloc.io/resources/npm-and-package-json).
 
 Install the project dependencies by running:
-
+  
 ```
 $ npm install
 ```
@@ -71,7 +71,7 @@ All code, styles, markup, and assets should be saved to the `app` directory. Sav
 
 Add images to the `app/assets/images` directory. To reference images in HTML, use the path `/assets/images/<image file name>.jpg`. For example, to include the image called `bloc-white-logo.png`, the path for the `src` attribute in the HTML would be:
 
-```html 
+```html
 <img src="/assets/images/bloc-white-logo.png">
 ```
 
@@ -135,7 +135,7 @@ var Hapi = require('hapi'),
 +            handler: createDirectoryRoute('/')
          }
      };
- 
+
 -server.route([ routes.css, routes.js, routes.images, routes.templates, routes.spa ]);
 +server.route([ routes.css, routes.js, routes.images, routes.templates, routes.staticPages ]);
 ...
